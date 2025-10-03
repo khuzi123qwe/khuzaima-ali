@@ -1,0 +1,12 @@
+const abc = new Promise((resolve, reject)=>{
+    if (5==2){
+        reject({message:" Done with success"});
+    }
+});
+console.log(abc);
+
+abc.then((res) =>{
+console.log("this is in the then" + res);
+}).catch((err) =>{
+    console.log("this is in the catch"+err.message)
+});  
